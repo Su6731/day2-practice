@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="library.css">
         <title>图书馆借书系统</title>
     </head>
 <body>
@@ -15,35 +16,42 @@
         <a href="#register">注册</a>
     </nav>
 <main>
-    <section id ="login">
+    <section id="login">
         <h2>请输入用户名和密码</h2>
-        <form action="#"methed="get"></form>
-        <p>
-            <label for="name">用户名</label>
-            <input type="text"name="name">
-        </p>
-        <p>
-            <label for = "password">密码</label>
-            <input type="password" password="password">
-        </p>
+        <form action="#" method="get">
+            <p>
+                <label for="login-name">用户名</label>
+                <input type="text" id="login-name" name="name">
+            </p>
+            <p>
+                <label for="login-password">密码</label>
+                <input type="password" id="login-password" name="password">
+            </p>
+        </form>
     </section>
     <section id="register">
         <h2>请输入邮箱</h2>
-        <form action="#"methed="get"></form>
-        <p>
-            <label for="email">邮箱</label>
-            <input type="email" email="email" required type="email">
-        </p>
+        <form action="#" method="get">
+            <p>
+                <label for="email">邮箱</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+        </form>
         <h2>请设置用户名和密码</h2>
-        <form action="#"methed="get"></form>
-        <p>
-            <label for="name">用户名</label>
-            <input type="text"name="name" maxlength="10">
-        </p>
-        <p>
-            <label for = "password">密码</label>
-            <input type="password" password="password" minlength="6">
-        </p>
+        <form action="#" method="get">
+            <p>
+                <label for="register-name">用户名</label>
+                <input type="text" id="register-name" name="name" maxlength="10">
+            </p>
+            <p>
+                <label for="register-password">密码</label>
+                <input type="password" id="register-password" name="password" minlength="6">
+            </p>
+        </form>
     </section>
+</main>
+<footer>
+    <p>仅为简陋版</p>
+</footer>
 </body>
 </html>
